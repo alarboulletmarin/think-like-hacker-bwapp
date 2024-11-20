@@ -36,7 +36,7 @@ jobs:
         run: npm install  # Changé de 'nci' à 'npm install'
 
       - name: Build
-        run: nr build --base /${{github.event.repository.name}}/slidev-bwapp/
+        run: nr build --base /${{github.event.repository.name}}/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
