@@ -9,11 +9,10 @@ permissions:
   contents: read
   pages: write
   id-token: write
-  deployments: write
 
 concurrency:
-  group: "pages"
-  cancel-in-progress: true
+  group: pages
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -34,7 +33,7 @@ jobs:
         run: npm i -g @antfu/ni
 
       - name: Install dependencies
-        run: npm install
+        run: npm install  # Changé de 'nci' à 'npm install'
 
       - name: Build
         run: nr build --base /${{github.event.repository.name}}/slidev-bwapp/
@@ -54,10 +53,6 @@ jobs:
     runs-on: ubuntu-latest
     name: Deploy
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
-
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
