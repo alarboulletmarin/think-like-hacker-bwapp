@@ -9,10 +9,11 @@ permissions:
   contents: read
   pages: write
   id-token: write
+  deployments: write
 
 concurrency:
-  group: pages
-  cancel-in-progress: false
+  group: "pages"
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -33,7 +34,7 @@ jobs:
         run: npm i -g @antfu/ni
 
       - name: Install dependencies
-        run: nci
+        run: npm install
 
       - name: Build
         run: nr build --base /${{github.event.repository.name}}/slidev-bwapp/
@@ -53,6 +54,15 @@ jobs:
     runs-on: ubuntu-latest
     name: Deploy
     steps:
+      - name: Cancel previous deployments
+        run: |
+          gh api -X GET /repos/${{ github.repository }}/deployments \
+            --jq '.[] | select(.environment == "github-pages" and .state == "pending") | .id' \
+            | xargs -I{} gh api -X POST /repos/${{ github.repository }}/deployments/{}/statuses \
+            -F state=inactive
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
