@@ -63,14 +63,33 @@ jobs:
           && sudo apt update \
           && sudo apt install gh -y
 
-      - name: Cancel in-progress deployments
+      - name: Cancel ALL in-progress deployments
         run: |
           gh auth login --with-token <<< "${{ secrets.GITHUB_TOKEN }}"
-          DEPLOYMENT_ID=$(gh api repos/${{ github.repository }}/deployments --jq '.[0].id')
-          if [ ! -z "$DEPLOYMENT_ID" ]; then
-            gh api --method POST repos/${{ github.repository }}/deployments/$DEPLOYMENT_ID/statuses \
+          
+          # Get all deployments and cancel them
+          gh api \
+            -H "Accept: application/vnd.github+json" \
+            repos/${{ github.repository }}/deployments \
+            --jq '.[] | select(.environment == "github-pages") | .id' | \
+          while read -r deployment_id; do
+            echo "Deactivating deployment $deployment_id"
+            gh api \
+              --method POST \
+              -H "Accept: application/vnd.github+json" \
+              repos/${{ github.repository }}/deployments/$deployment_id/statuses \
               -f state=inactive
-          fi
+            
+            echo "Marking deployment $deployment_id as failure"
+            gh api \
+              --method POST \
+              -H "Accept: application/vnd.github+json" \
+              repos/${{ github.repository }}/deployments/$deployment_id/statuses \
+              -f state=failure
+          done
+
+      - name: Wait a moment
+        run: sleep 10
 
       - name: Deploy to GitHub Pages
         id: deployment
