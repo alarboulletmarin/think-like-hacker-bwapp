@@ -54,42 +54,9 @@ jobs:
     runs-on: ubuntu-latest
     name: Deploy
     steps:
-      - name: Install GitHub CLI
-        run: |
-          type -p curl >/dev/null || (sudo apt update && sudo apt install curl -y)
-          curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg \
-          && sudo chmod go+r /usr/share/keyrings/githubcli-archive-keyring.gpg \
-          && echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null \
-          && sudo apt update \
-          && sudo apt install gh -y
-
-      - name: Cancel ALL in-progress deployments
-        run: |
-          gh auth login --with-token <<< "${{ secrets.GITHUB_TOKEN }}"
-          
-          # Get all deployments and cancel them
-          gh api \
-            -H "Accept: application/vnd.github+json" \
-            repos/${{ github.repository }}/deployments \
-            --jq '.[] | select(.environment == "github-pages") | .id' | \
-          while read -r deployment_id; do
-            echo "Deactivating deployment $deployment_id"
-            gh api \
-              --method POST \
-              -H "Accept: application/vnd.github+json" \
-              repos/${{ github.repository }}/deployments/$deployment_id/statuses \
-              -f state=inactive
-            
-            echo "Marking deployment $deployment_id as failure"
-            gh api \
-              --method POST \
-              -H "Accept: application/vnd.github+json" \
-              repos/${{ github.repository }}/deployments/$deployment_id/statuses \
-              -f state=failure
-          done
-
-      - name: Wait a moment
-        run: sleep 10
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
 
       - name: Deploy to GitHub Pages
         id: deployment
