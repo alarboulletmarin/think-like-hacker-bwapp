@@ -1,95 +1,89 @@
 # bWAPP Security Analysis Presentation 🔒
 
-A comprehensive security analysis and presentation of bWAPP (buggy web application), built with Slidev. Part of the "Think Like a Hacker" educational project focusing on web application security.
-
-![Built with Slidev](https://img.shields.io/badge/Built%20with-Slidev-0A9EDC)
-![Security Training](https://img.shields.io/badge/Security-Training-red)
-![License MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-![Educational Content](https://img.shields.io/badge/Educational-Content-green)
+<div align="center">
+  <img src="slidev-bwapp/public/images/bwapp-logo.png" alt="bWAPP Logo" width="600"/>
+  <br />
+  A comprehensive security analysis and presentation of bWAPP (buggy web application).
+  <br />
+  Part of the "Think Like a Hacker" educational project.
+  <br /><br />
+  
+  ![Built with Slidev](https://img.shields.io/badge/Built%20with-Slidev-0A9EDC)
+  ![Security Training](https://img.shields.io/badge/Security-Training-red)
+  ![License MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+  ![Educational Content](https://img.shields.io/badge/Educational-Content-green)
+</div>
 
 ## 📖 Overview
 
-This presentation explores bWAPP (buggy web application), a deliberately vulnerable web application designed for security training. It covers the application's architecture, available vulnerabilities, and includes practical demonstrations.
+Interactive presentation exploring bWAPP (buggy web application), focusing on:
+- 🔍 Technical architecture analysis
+- 💉 Vulnerability demonstrations
+- 🛡️ Security best practices
+- 🎓 Educational insights
 
-### 🎯 Key Topics
+<div align="center">
+  <img src="slidev-bwapp/public/images/preview.png" alt="Presentation Preview" width="600"/>
+</div>
 
-- Technical architecture and components
-- Comprehensive vulnerability analysis
-- Different difficulty levels
-- Hands-on demonstrations
-- Security best practices
+## 🎯 Key Features
+
+- **Live Demonstrations**: XSS and Directory Traversal attacks
+- **Technical Deep Dive**: Docker deployment and security considerations
+- **Interactive Content**: Dynamic slides with animations
+- **Comprehensive Coverage**: From basics to advanced concepts
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
 - Node.js >= 18.0.0
-- npm or yarn
-- Git
+- Docker (for demonstrations)
+- Modern web browser
 
-### Installation
+### Docker Setup for Demos
+
+```bash
+# Pull and run bWAPP container
+docker run -d -p 80:80 raesene/bwapp
+
+# Verify container status
+docker ps | grep bwapp
+```
+
+### Presentation Setup
 
 ```bash
 # Clone the repository
 git clone https://github.com/yourusername/bwapp-security-slidev.git
 
-# Navigate to the project directory
-cd bwapp-security-slidev
-
 # Install dependencies
 npm install
-# or
-yarn install
 
 # Start the presentation
 npm run dev
-# or
-yarn dev
 ```
 
 ## 🛠️ Built With
 
-- [Slidev](https://sli.dev/) - Presentation Slides for Developers
-- Markdown
-- Vue.js components
-
-## 📊 Presentation Structure
-
-1. Introduction to bWAPP
-2. Technical Overview
-3. Vulnerability Analysis
-4. Live Demonstrations
-5. Security Recommendations
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+- [Slidev](https://sli.dev/) - Presentation framework
+- [Vue.js](https://vuejs.org/) - UI components
+- [Docker](https://www.docker.com/) - Container platform
+- [Markdown](https://www.markdownguide.org/) - Content formatting
 
 ## 📝 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👤 Author
-
-Your Name
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your Name](https://linkedin.com/in/yourprofile)
+MIT License - see [LICENSE](LICENSE)
 
 ## 🙏 Acknowledgments
 
 - OWASP Community
-- bWAPP developers
-- Security training community
+- bWAPP Development Team
+- Security Research Community
+- Slidev Team
 
-## 📸 Screenshots
-
-[Coming soon]
-
----
-Made with ❤️ for web security education
+<div align="center">
+  <br />
+  <p>Made with ❤️ for web security education</p>
+  <p>© 2024 alarboulletmarin</p>
+</div>
