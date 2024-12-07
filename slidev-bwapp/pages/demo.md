@@ -2,140 +2,115 @@
 layout: section
 ---
 
-# Live Demonstration
+# Live Demonstrations
 
----
-layout: default
----
-
-# SQL Injection Demo
-
-<div class="grid grid-cols-2 gap-4">
-<div>
-
-## Vulnerability
-```php
-$query = "SELECT * FROM users 
-          WHERE username='$username' 
-          AND password='$password'";
-```
-
-## Attack Vector
-```sql
-username: admin' --
-password: anything
-```
-
-</div>
-<div v-click>
-
-## Impact
-- Authentication bypass
-- Data exposure
-- Database control
-
-## Prevention
-```php
-$stmt = $pdo->prepare("SELECT * FROM users 
-       WHERE username = ? AND password = ?");
-$stmt->execute([$username, $password]);
-```
-
-</div>
+<div class="slide-number">
+  <SlideCurrentNo />/<SlideTotalNo />
 </div>
 
 ---
 layout: default
 ---
 
-# XSS Attack Demo
+# Stored XSS Attack in Blog
 
-<div class="grid grid-cols-2 gap-4">
-<div>
-
-## Vulnerable Code
-```html
-<input type="text" value="<?php echo $_GET['name']; ?>">
-```
-
-## Attack Payload
-```javascript
-"><script>alert('XSS')</script>
-```
-
-</div>
-<div v-click>
-
-## Impact
-- Cookie theft
-- Session hijacking
-- Defacement
-
-## Secure Code
-```php
-<input type="text" value="<?php echo htmlspecialchars($_GET['name']); ?>">
-```
-
-</div>
+<div class="grid grid-cols-2 gap-8">
+  <div>
+    <h3 class="text-xl mb-4">Attack Scenario</h3>
+    <div class="space-y-4">
+      <p>1. Normal blog functionality</p>
+      <p>2. Advanced XSS payload injection</p>
+      <p>3. Cookie theft simulation</p>
+    </div>
+  </div>
+  <div class="flex flex-col justify-center">
+    <h3 class="text-xl mb-4">Security Impact</h3>
+    <div class="space-y-4">
+      <p>• Persistent malicious code</p>
+      <p>• Session hijacking risks</p>
+      <p>• Data confidentiality breach</p>
+    </div>
+  </div>
 </div>
 
----
-layout: center
-class: text-center
----
+<!-- Emplacement pour le GIF de démonstration -->
+<!-- <div class="mt-8">
+  <img 
+    src="/demos/stored-xss.gif" 
+    class="rounded-lg shadow-lg w-full"
+    alt="Stored XSS Attack demonstration"
+  />
+</div> -->
 
-# File Upload Vulnerability
-
-<div class="grid grid-cols-2 gap-4 mt-4">
-<div v-click>
-
-## Vulnerable Setup
-- No file type validation
-- No size restrictions
-- Unsafe file handling
-- Predictable locations
-
-</div>
-<div v-click>
-
-## Security Measures
-- File type checking
-- Size limitations
-- Random naming
-- Secure storage
-
-</div>
+<div class="slide-number">
+  <SlideCurrentNo />/<SlideTotalNo />
 </div>
 
 ---
 layout: default
 ---
 
-# Security Tools Used
+# Directory Traversal Exploitation
 
-<div class="grid grid-cols-3 gap-4">
-<div v-click class="border p-4 rounded">
-  <h3 class="text-lg font-bold">Burp Suite</h3>
-  <ul>
-    <li>Request interception</li>
-    <li>Parameter testing</li>
-    <li>Vulnerability scanning</li>
-  </ul>
+<div class="grid grid-cols-2 gap-8">
+  <div>
+    <h3 class="text-xl mb-4">Attack Methodology</h3>
+    <div class="space-y-4">
+      <p>1. Path manipulation techniques</p>
+      <p>2. Filter bypass methods</p>
+      <p>3. Sensitive file access</p>
+    </div>
+  </div>
+  <div class="flex flex-col justify-center">
+    <h3 class="text-xl mb-4">Critical Findings</h3>
+    <div class="space-y-4">
+      <p>• System file exposure</p>
+      <p>• Configuration leakage</p>
+      <p>• Security boundary bypass</p>
+    </div>
+  </div>
 </div>
-<div v-click class="border p-4 rounded">
-  <h3 class="text-lg font-bold">OWASP ZAP</h3>
-  <ul>
-    <li>Automated scanning</li>
-    <li>Attack simulation</li>
-    <li>Security testing</li>
-  </ul>
+
+<!-- Emplacement pour le GIF de démonstration -->
+<!-- <div class="mt-8">
+  <img 
+    src="/demos/directory-traversal.gif" 
+    class="rounded-lg shadow-lg w-full"
+    alt="Directory Traversal demonstration"
+  />
+</div> -->
+
+<div class="slide-number">
+  <SlideCurrentNo />/<SlideTotalNo />
 </div>
-<div v-click class="border p-4 rounded">
-  <h3 class="text-lg font-bold">Browser Tools</h3>
-  <ul>
-    <li>Developer console</li>
-    <li>Network monitoring</li>
-    <li>Cookie inspection</li>
-  </ul>
+
+---
+layout: default
+---
+
+# Technical Impact Analysis
+
+<div class="grid grid-cols-2 gap-8">
+  <div class="bg-red-50/20 p-6 rounded-lg">
+    <h3 class="text-xl mb-4">Stored XSS</h3>
+    <div class="space-y-4">
+      <p>• Affects all visitors</p>
+      <p>• Persists in database</p>
+      <p>• Cross-user impact</p>
+      <p>• Session compromise</p>
+    </div>
+  </div>
+  <div class="bg-blue-50/20 p-6 rounded-lg">
+    <h3 class="text-xl mb-4">Directory Traversal</h3>
+    <div class="space-y-4">
+      <p>• File system access</p>
+      <p>• Information disclosure</p>
+      <p>• Configuration exposure</p>
+      <p>• Privacy violation</p>
+    </div>
+  </div>
 </div>
+
+<div class="slide-number">
+  <SlideCurrentNo />/<SlideTotalNo />
 </div>
