@@ -4,126 +4,105 @@ layout: section
 
 # Analysis & Conclusion
 
----
-layout: two-cols
----
-
-# Critical Analysis
-
-<v-clicks>
-
-## Strengths
-- Comprehensive coverage
-- Educational value
-- Real-world scenarios
-- Active community
-- Regular updates
-
-## Use Cases
-- Security training
-- Penetration testing
-- Certification prep
-- Development learning
-
-</v-clicks>
-
-::right::
-
-<v-clicks>
-
-## Areas for Improvement
-- Dated interface
-- Limited documentation
-- Basic scenarios
-- Setup complexity
-
-## Recommendations
-- Modern UI update
-- Better documentation
-- Advanced scenarios
-- Docker integration
-
-</v-clicks>
-
----
-layout: center
-class: text-center
----
-
-# Comparison with Alternatives
-
-<div class="grid grid-cols-3 gap-4 mt-4">
-<div v-click class="border p-4 rounded">
-  <h3 class="text-lg font-bold">DVWA</h3>
-  <p class="text-sm">More modern, fewer vulnerabilities</p>
-</div>
-<div v-click class="border p-4 rounded">
-  <h3 class="text-lg font-bold">WebGoat</h3>
-  <p class="text-sm">Better guided learning</p>
-</div>
-<div v-click class="border p-4 rounded">
-  <h3 class="text-lg font-bold">Juice Shop</h3>
-  <p class="text-sm">Modern stack, gamified</p>
-</div>
+<div class="slide-number">
+  <SlideCurrentNo />/<SlideTotalNo />
 </div>
 
 ---
 layout: default
 ---
 
-# Key Takeaways
+# Project Evaluation
 
-<div class="grid grid-cols-2 gap-4">
-<div v-click>
+<div class="grid grid-cols-2 gap-8 mt-12">
+  <div class="bg-blue-50/20 p-6 rounded-lg">
+    <h3 class="text-xl mb-4 text-blue-600">Educational Benefits</h3>
+    <div class="space-y-2">
+      <p>Hands-on vulnerability exploration</p>
+      <p>Multiple difficulty levels adaptation</p>
+      <p>Real-world security scenarios</p>
+    </div>
+  </div>
 
-## Learning Value
-- Practical experience
-- Security awareness
-- Best practices
-- Tool proficiency
-
+  <div class="bg-green-50/20 p-6 rounded-lg">
+    <h3 class="text-xl mb-4 text-green-600">Technical Strengths</h3>
+    <div class="space-y-2">
+      <p>Docker containerization support</p>
+      <p>Wide vulnerability coverage</p>
+      <p>Flexible deployment options</p>
+    </div>
+  </div>
 </div>
-<div v-click>
 
-## Implementation
-- Easy deployment
-- Flexible usage
-- Community support
-- Regular updates
-
-</div>
-<div v-click>
-
-## Security Impact
-- Risk understanding
-- Defense strategies
-- Attack knowledge
-- Protection methods
-
-</div>
-<div v-click>
-
-## Future Scope
-- Modern updates
-- New vulnerabilities
-- Better integration
-- Enhanced features
-
-</div>
+<div class="slide-number">
+  <SlideCurrentNo />/<SlideTotalNo />
 </div>
 
 ---
-layout: center
-class: text-center
+layout: default
 ---
 
-# Questions?
+# Platform Comparison
 
-<div class="mt-8">
-  <h3>Contact Information</h3>
-  <p class="mt-4">
-    GitHub: [your-username]<br>
-    Email: [your-email]<br>
-    LinkedIn: [your-profile]
-  </p>
+<div class="grid grid-cols-3 gap-6 mt-12">
+  <div class="p-6 bg-purple-50/20 rounded-lg">
+    <h3 class="text-xl mb-4">bWAPP</h3>
+    <div class="space-y-2">
+      <p>✓ Extensive vulnerability types</p>
+      <p>✓ Easy containerization</p>
+      <p>✓ Active community</p>
+    </div>
+  </div>
+
+  <div class="p-6 bg-orange-50/20 rounded-lg">
+    <h3 class="text-xl mb-4">OWASP WebGoat</h3>
+    <div class="space-y-2">
+      <p>✓ Guided learning path</p>
+      <p>✓ Modern interface</p>
+      <p>✓ Regular updates</p>
+    </div>
+  </div>
+
+  <div class="p-6 bg-blue-50/20 rounded-lg">
+    <h3 class="text-xl mb-4">DVWA</h3>
+    <div class="space-y-2">
+      <p>✓ Simple architecture</p>
+      <p>✓ Clear difficulty levels</p>
+      <p>✓ Basic scenarios</p>
+    </div>
+  </div>
+</div>
+
+<div class="slide-number">
+  <SlideCurrentNo />/<SlideTotalNo />
+</div>
+
+---
+layout: default
+---
+
+# Future Perspectives
+
+<div class="grid grid-cols-2 gap-8 mt-12">
+  <div class="space-y-8">
+    <div>
+      <h3 class="text-xl mb-4">Areas of Enhancement</h3>
+      <p class="text-lg">Interface modernization</p>
+      <p class="text-lg">Documentation expansion</p>
+      <p class="text-lg">Advanced scenario integration</p>
+    </div>
+  </div>
+
+  <div class="space-y-8">
+    <div>
+      <h3 class="text-xl mb-4">Security Evolution</h3>
+      <p class="text-lg">New vulnerability types</p>
+      <p class="text-lg">Enhanced protection methods</p>
+      <p class="text-lg">Modern attack simulations</p>
+    </div>
+  </div>
+</div>
+
+<div class="slide-number">
+  <SlideCurrentNo />/<SlideTotalNo />
 </div>
