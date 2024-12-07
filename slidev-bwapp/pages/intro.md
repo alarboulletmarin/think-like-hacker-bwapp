@@ -2,6 +2,7 @@
 layout: center
 ---
 
+
 # What is bWAPP?
 
 Buggy Web Application (bWAPP) is an open-source deliberately vulnerable web application designed for cybersecurity education.
@@ -14,6 +15,10 @@ Buggy Web Application (bWAPP) is an open-source deliberately vulnerable web appl
 - 🎓 **Target**: Security professionals, developers, students
 
 </v-clicks>
+
+<div class="slide-number">
+  <SlideCurrentNo />/<SlideTotalNo />
+</div>
 
 ---
 layout: default
@@ -59,6 +64,10 @@ layout: default
       Vulnerability prevention
     </div>
   </div>
+</div>
+
+<div class="slide-number">
+  <SlideCurrentNo />/<SlideTotalNo />
 </div>
 
 ---
@@ -111,4 +120,8 @@ layout: default
       <p class="text-xl">Threat assessment expertise</p>
     </div>
   </div>
+</div>
+
+<div class="slide-number">
+  <SlideCurrentNo />/<SlideTotalNo />
 </div>
