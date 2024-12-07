@@ -14,6 +14,20 @@ title: bWAPP Security Analysis
 mdc: true
 ---
 
+<style>
+.slidev-layout {
+  position: relative;
+}
+
+.slide-number {
+  position: absolute;
+  right: 0.8rem;
+  bottom: 0.8rem;
+  font-size: 0.9rem;
+  opacity: 0.6;
+}
+</style>
+
 # bWAPP Security Analysis
 Think Like a Hacker Project
 
@@ -50,4 +64,4 @@ class: text-center
 
 # Thank You!
 
-[GitHub Repository](https://github.com/alarboulletmarin/bwapp-security-slidev)
+[GitHub Repository](https://github.com/alarboulletmarin/think-like-hacker-bwapp)
