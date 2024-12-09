@@ -38,6 +38,10 @@ layout: default
   <SlideCurrentNo />/<SlideTotalNo />
 </div>
 
+<!--
+Les bénéfices éducatifs de bWAPP sont significatifs. La plateforme permet une exploration pratique des vulnérabilités, avec différents niveaux de difficulté pour s'adapter à tous les profils. Les scénarios proposés reflètent des situations réelles. Techniquement, l'utilisation de Docker, la large couverture des vulnérabilités et la flexibilité du déploiement sont des atouts majeurs.
+-->
+
 ---
 layout: default
 ---
@@ -77,6 +81,10 @@ layout: default
   <SlideCurrentNo />/<SlideTotalNo />
 </div>
 
+<!--
+En comparant avec d'autres plateformes similaires, chacune a ses points forts. bWAPP se distingue par sa large gamme de vulnérabilités et sa facilité de déploiement. WebGoat offre un parcours d'apprentissage plus guidé avec une interface moderne. DVWA, plus simple, convient parfaitement aux débutants avec ses scénarios basiques. Cette diversité permet de choisir l'outil le plus adapté à ses besoins d'apprentissage.
+-->
+
 ---
 layout: default
 ---
@@ -106,3 +114,7 @@ layout: default
 <div class="slide-number">
   <SlideCurrentNo />/<SlideTotalNo />
 </div>
+
+<!--
+Plusieurs axes d'amélioration se dessinent pour bWAPP. L'interface mériterait une modernisation, et la documentation pourrait être enrichie. L'intégration de scénarios plus avancés permettrait d'approfondir l'apprentissage. Côté sécurité, l'ajout de nouveaux types de vulnérabilités et l'amélioration des méthodes de protection existantes garderaient l'outil pertinent face aux menaces émergentes.
+-->

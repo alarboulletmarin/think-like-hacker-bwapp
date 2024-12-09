@@ -35,6 +35,14 @@ layout: default
   <SlideCurrentNo />/<SlideTotalNo />
 </div>
 
+<!--
+L'architecture de bWAPP se divise en trois couches distinctes. 
+L'interface utilisateur gère toute l'interaction avec les formulaires et la console d'administration. 
+Le backend PHP s'occupe du traitement des données et de l'authentification. 
+La base MySQL stocke les données de manière sécurisée.
+ Cette architecture en couches est typique des applications web modernes.
+-->
+
 ---
 layout: default
 ---
@@ -78,6 +86,13 @@ layout: default
   <SlideCurrentNo />/<SlideTotalNo />
 </div>
 
+<!--
+Le déploiement est simplifié grâce à Docker. Une seule commande suffit : 'docker run -d -p 80:80 raesene/bwapp'.
+Après le déploiement, il faut initialiser la base de données via l'interface d'installation et se connecter avec les identifiants par défaut. 
+La gestion du conteneur est simple avec les commandes Docker standards. 
+Les données persistent entre les sessions mais peuvent être réinitialisées en redémarrant le conteneur.
+-->
+
 ---
 layout: default
 ---
@@ -110,34 +125,7 @@ layout: default
   <SlideCurrentNo />/<SlideTotalNo />
 </div>
 
----
-layout: default
----
-
-# 🔧 Security Considerations
-
-<div class="grid grid-cols-2 gap-8 p-6">
-  <div class="p-4 bg-red-50/20 rounded">
-    <h3 class="text-xl mb-4">⚠️ Container Isolation</h3>
-    <p>Keep container isolated from production environments</p>
-  </div>
-
-  <div class="p-4 bg-yellow-50/20 rounded">
-    <h3 class="text-xl mb-4">🔐 Network Security</h3>
-    <p>Restrict port exposure to localhost only</p>
-  </div>
-
-  <div class="p-4 bg-orange-50/20 rounded">
-    <h3 class="text-xl mb-4">🔍 Monitoring</h3>
-    <p>Track container resource usage and access</p>
-  </div>
-
-  <div class="p-4 bg-purple-50/20 rounded">
-    <h3 class="text-xl mb-4">🔄 Reset State</h3>
-    <p>Regular container recreation for clean state</p>
-  </div>
-</div>
-
-<div class="slide-number">
-  <SlideCurrentNo />/<SlideTotalNo />
-</div>
+<!--
+L'environnement technique repose sur la stack LAMP conteneurisée. 
+L'accès se fait via localhost sur le port 80. Les prérequis sont minimes : uniquement Docker sur le système d'exploitation. L'isolation conteneur offre une couche de sécurité supplémentaire.
+-->

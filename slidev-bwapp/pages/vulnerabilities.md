@@ -8,6 +8,10 @@ layout: section
   <SlideCurrentNo />/<SlideTotalNo />
 </div>
 
+<!--
+Cette section explore les différentes vulnérabilités présentes dans bWAPP, permettant de comprendre leur diversité et leur impact sur la sécurité des applications web.
+-->
+
 ---
 layout: default
 ---
@@ -32,6 +36,10 @@ layout: default
 <div class="slide-number">
   <SlideCurrentNo />/<SlideTotalNo />
 </div>
+
+<!--
+Les attaques par injection constituent la base de nombreuses vulnérabilités web. Les injections SQL, commandes et LDAP permettent de manipuler les systèmes. L'authentification et ses faiblesses représentent un vecteur d'attaque critique, tandis que le XSS expose les risques côté client. Ces trois catégories forment le socle des vulnérabilités web les plus courantes.
+-->
 
 ---
 layout: default
@@ -81,6 +89,15 @@ layout: default
 <div class="slide-number">
   <SlideCurrentNo />/<SlideTotalNo />
 </div>
+
+<!--
+La catégorisation suit quatre axes essentiels :
+
+- L'impact permet d'évaluer les conséquences (confidentialité, intégrité, disponibilité)
+- La surface d'attaque identifie les points d'entrée (client, serveur, logique)
+- Le contexte définit le cadre d'exploitation (authentification, autorisation, données)
+- L'alignement OWASP assure la pertinence avec les standards actuels
+-->
 
 ---
 layout: default
@@ -147,3 +164,11 @@ layout: default
 <div class="slide-number">
   <SlideCurrentNo />/<SlideTotalNo />
 </div>
+
+<!--
+Le parcours pédagogique est progressif :
+
+- Niveau débutant : vulnérabilités évidentes pour comprendre les concepts
+- Niveau intermédiaire : protections basiques nécessitant des techniques avancées
+- Niveau expert : défis complexes pour maîtriser les contre-mesures sophistiquées
+-->

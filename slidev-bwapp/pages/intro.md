@@ -20,6 +20,10 @@ Buggy Web Application (bWAPP) is an open-source deliberately vulnerable web appl
   <SlideCurrentNo />/<SlideTotalNo />
 </div>
 
+<!--
+Pour commencer cette présentation, bWAPP est une application web volontairement vulnérable. Elle a été conçue spécifiquement pour l'apprentissage de la sécurité informatique. Avec plus de 100 vulnérabilités intégrées, elle offre un environnement idéal pour la formation pratique aux tests de sécurité. Elle s'adresse aussi bien aux professionnels de la sécurité qu'aux développeurs et étudiants.
+-->
+
 ---
 layout: default
 ---
@@ -69,6 +73,11 @@ layout: default
 <div class="slide-number">
   <SlideCurrentNo />/<SlideTotalNo />
 </div>
+
+<!--
+L'importance de bWAPP se manifeste à travers quatre aspects clés. C'est un environnement d'apprentissage qui permet de pratiquer sur des scénarios réels en toute sécurité. Professionnellement, elle offre une expérience pratique progressive avec le soutien d'une communauté active. Pour la formation, elle fournit une documentation complète et un parcours structuré. Enfin, côté développement, elle sensibilise aux bonnes pratiques de sécurité et à la prévention des vulnérabilités.
+-->
+
 
 ---
 layout: default
@@ -125,3 +134,7 @@ layout: default
 <div class="slide-number">
   <SlideCurrentNo />/<SlideTotalNo />
 </div>
+
+<!--
+L'impact sur la formation en sécurité se décline en quatre axes. L'apprentissage pratique permet de passer de la théorie à l'application réelle. La croissance professionnelle est soutenue par la préparation aux certifications. Les compétences en développement sont renforcées par la pratique du code sécurisé. L'expertise en analyse de sécurité s'acquiert à travers l'évaluation des menaces. Cette approche globale assure une formation complète en sécurité web.
+-->
