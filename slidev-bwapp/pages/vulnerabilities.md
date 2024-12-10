@@ -169,9 +169,12 @@ layout: default
 </div>
 
 <!--
-Le parcours pédagogique est progressif :
+Enfin, bWAPP offre un parcours pédagogique adapté grâce à trois niveaux de difficulté :
 
-- Niveau débutant : vulnérabilités évidentes pour comprendre les concepts
-- Niveau intermédiaire : protections basiques nécessitant des techniques avancées
-- Niveau expert : défis complexes pour maîtriser les contre-mesures sophistiquées
+Niveau débutant : Les vulnérabilités sont ici simples à exploiter, sans mécanismes de protection. C’est parfait pour les débutants afin de comprendre les bases.
+Niveau intermédiaire : Les protections sont un peu plus robustes et nécessitent des techniques plus avancées pour être contournées.
+Niveau expert : On atteint ici un niveau avancé, avec des protections complexes. C’est un véritable défi pour ceux qui maîtrisent déjà bien les concepts.
+
+Ces niveaux permettent une progression pédagogique adaptée, avec des documentations et solutions détaillées pour accompagner l'apprentissage. 
+Grâce à cette structuration, bWAPP est un outil idéal pour acquérir des compétences solides en sécurité web.
 -->
