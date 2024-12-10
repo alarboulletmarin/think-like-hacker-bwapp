@@ -39,7 +39,7 @@ layout: default
 </div>
 
 <!--
-Les bénéfices éducatifs de bWAPP sont significatifs. La plateforme permet une exploration pratique des vulnérabilités, avec différents niveaux de difficulté pour s'adapter à tous les profils. Les scénarios proposés reflètent des situations réelles. Techniquement, l'utilisation de Docker, la large couverture des vulnérabilités et la flexibilité du déploiement sont des atouts majeurs.
+bWAPP est un excellent outil d'apprentissage. C'est une plateforme simple qui permet d'apprendre et de pratiquer la sécurité informatique. Elle s'adapte au niveau de chacun, que vous soyez débutant ou expert. Les exercices proposés sont basés sur des problèmes de sécurité qu'on trouve dans le monde réel. L'outil est facile à installer grâce à Docker, couvre de nombreux types de failles de sécurité, et peut être utilisé n'importe où.
 -->
 
 ---
@@ -82,7 +82,7 @@ layout: default
 </div>
 
 <!--
-En comparant avec d'autres plateformes similaires, chacune a ses points forts. bWAPP se distingue par sa large gamme de vulnérabilités et sa facilité de déploiement. WebGoat offre un parcours d'apprentissage plus guidé avec une interface moderne. DVWA, plus simple, convient parfaitement aux débutants avec ses scénarios basiques. Cette diversité permet de choisir l'outil le plus adapté à ses besoins d'apprentissage.
+Il existe plusieurs outils pour apprendre la sécurité informatique. bWAPP est un outil simple qui offre beaucoup d'exercices de sécurité et s'installe facilement. WebGoat est bien organisé et moderne. DVWA est parfait pour débuter car il propose des exercices simples. Chacun peut ainsi choisir l'outil qui correspond le mieux à ses besoins d'apprentissage.
 -->
 
 ---
@@ -116,5 +116,5 @@ layout: default
 </div>
 
 <!--
-Plusieurs axes d'amélioration se dessinent pour bWAPP. L'interface mériterait une modernisation, et la documentation pourrait être enrichie. L'intégration de scénarios plus avancés permettrait d'approfondir l'apprentissage. Côté sécurité, l'ajout de nouveaux types de vulnérabilités et l'amélioration des méthodes de protection existantes garderaient l'outil pertinent face aux menaces émergentes.
+bWAPP présente plusieurs axes d'amélioration potentiels. Son interface nécessiterait une modernisation et sa documentation gagnerait à être enrichie. L'ajout de scénarios plus avancés permettrait d'approfondir l'apprentissage. Pour maintenir sa pertinence face aux menaces émergentes, l'outil bénéficierait de l'intégration de nouvelles vulnérabilités et du renforcement des méthodes de protection existantes.
 -->
