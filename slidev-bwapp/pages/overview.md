@@ -36,11 +36,11 @@ layout: default
 </div>
 
 <!--
-L'architecture de bWAPP se divise en trois couches distinctes. 
-L'interface utilisateur gère toute l'interaction avec les formulaires et la console d'administration. 
-Le backend PHP s'occupe du traitement des données et de l'authentification. 
-La base MySQL stocke les données de manière sécurisée.
- Cette architecture en couches est typique des applications web modernes.
+L'architecture de bWAPP est composée de trois couches distinctes :
+L'interface utilisateur, qui gère les interactions avec les formulaires et la console d'administration.
+Le backend PHP, responsable du traitement des données et de l'authentification.
+La base de données MySQL, qui assure le stockage sécurisé des données.
+Cette architecture en couches représente une approche classique des applications web modernes.
 -->
 
 ---
@@ -86,11 +86,9 @@ layout: default
   <SlideCurrentNo />/<SlideTotalNo />
 </div>
 
-<!--
-Le déploiement est simplifié grâce à Docker. Une seule commande suffit : 'docker run -d -p 80:80 raesene/bwapp'.
-Après le déploiement, il faut initialiser la base de données via l'interface d'installation et se connecter avec les identifiants par défaut. 
-La gestion du conteneur est simple avec les commandes Docker standards. 
-Les données persistent entre les sessions mais peuvent être réinitialisées en redémarrant le conteneur.
+<!--Le déploiement est simplifié grâce à Docker avec une seule commande : 'docker run -d -p 80:80 raesene/bwapp'. 
+Une fois déployé, l'initialisation de la base de données s'effectue via l'interface d'installation, suivie d'une connexion avec les identifiants par défaut. 
+La gestion du conteneur s'effectue aisément avec les commandes Docker standards. Les données sont conservées entre les sessions, mais peuvent être réinitialisées par un simple redémarrage du conteneur.
 -->
 
 ---
@@ -126,6 +124,7 @@ layout: default
 </div>
 
 <!--
-L'environnement technique repose sur la stack LAMP conteneurisée. 
-L'accès se fait via localhost sur le port 80. Les prérequis sont minimes : uniquement Docker sur le système d'exploitation. L'isolation conteneur offre une couche de sécurité supplémentaire.
+L'environnement technique s'appuie sur une stack LAMP conteneurisée. L'application est accessible via localhost sur le port 80. 
+Les prérequis techniques sont minimaux — seul Docker doit être installé sur le système d'exploitation. 
+L'utilisation des conteneurs apporte une couche d'isolation sécurisée supplémentaire.
 -->
