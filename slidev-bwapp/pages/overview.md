@@ -47,44 +47,6 @@ Cette architecture en couches représente une approche classique des application
 layout: default
 ---
 
-# Open Source & Free
-
-<div class="mt-12 grid grid-cols-2 gap-8">
-  <div class="p-6 bg-blue-50/20 rounded-lg">
-    <h3 class="text-xl mb-4 font-bold">💻 Open Source</h3>
-    <div class="space-y-4">
-      <p>• Source code publicly available</p>
-      <p>• Community contributions welcome</p>
-      <p>• Transparent security practices</p>
-    </div>
-  </div>
-
-  <div class="p-6 bg-green-50/20 rounded-lg">
-    <h3 class="text-xl mb-4 font-bold">🆓 Free to Use</h3>
-    <div class="space-y-4">
-      <p>• No license fees</p>
-      <p>• Unlimited usage</p>
-      <p>• Free updates</p>
-    </div>
-  </div>
-</div>
-
-<div class="mt-8 p-6 bg-purple-50/20 rounded-lg">
-  <h3 class="text-xl mb-4 font-bold">🌐 Community Benefits</h3>
-  <div class="space-y-4">
-    <p>Accessible cybersecurity education for everyone</p>
-    <p>Active community sharing knowledge and experiences</p>
-  </div>
-</div>
-
-<div class="slide-number">
-  <SlideCurrentNo />/<SlideTotalNo />
-</div>
-
----
-layout: default
----
-
 # 🐳 Docker Deployment
 
 <div class="grid grid-cols-2 gap-8 p-6">
