@@ -38,7 +38,10 @@ layout: default
 </div>
 
 <!--
-Les attaques par injection constituent la base de nombreuses vulnérabilités web. Les injections SQL, commandes et LDAP permettent de manipuler les systèmes. L'authentification et ses faiblesses représentent un vecteur d'attaque critique, tandis que le XSS expose les risques côté client. Ces trois catégories forment le socle des vulnérabilités web les plus courantes.
+Les injections : Avec plus de 25 vulnérabilités, ce domaine inclut les injections SQL, HTML, de commandes, XML/XPath, et LDAP. Ces vulnérabilités permettent d'apprendre à manipuler les systèmes en contournant leur logique de traitement des données.
+Les failles XSS (Cross-Site Scripting) : Plus de 20 vulnérabilités y sont dédiées. Ces failles, telles que les XSS réfléchis, stockés ou basés sur le DOM, visent à manipuler l'exécution du code côté client.
+Les problèmes d’authentification : Avec 15 vulnérabilités, on y retrouve le contournement de l’authentification, les gestions de sessions faibles, les attaques par force brute, et même des problèmes liés aux cookies.
+Enfin, il y a d’autres vulnérabilités majeures, comme le Cross-Site Request Forgery (CSRF), l’upload de fichiers malveillants, ou les fuites d’informations sensibles.
 -->
 
 ---
@@ -91,12 +94,12 @@ layout: default
 </div>
 
 <!--
-La catégorisation suit quatre axes essentiels :
+Pour faciliter l’apprentissage, ces vulnérabilités sont également organisées en plusieurs catégories :
 
-- L'impact permet d'évaluer les conséquences (confidentialité, intégrité, disponibilité)
-- La surface d'attaque identifie les points d'entrée (client, serveur, logique)
-- Le contexte définit le cadre d'exploitation (authentification, autorisation, données)
-- L'alignement OWASP assure la pertinence avec les standards actuels
+Par leur impact sur la sécurité : Cela inclut la confidentialité, l’intégrité, ou encore la disponibilité des données.
+Par type d’attaque : Certaines vulnérabilités ciblent les clients, d’autres les serveurs, la logique métier, ou encore la configuration.
+Par leur alignement avec l’OWASP Top 10 : bWAPP met un point d’honneur à suivre les bonnes pratiques et les principaux risques de sécurité identifiés dans le domaine.
+Par contexte d’exploitation : On peut s’exercer sur des scénarios locaux ou distants, avec ou sans interaction utilisateur, et même en tenant compte du niveau d’authentification.
 -->
 
 ---
