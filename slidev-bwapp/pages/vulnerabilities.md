@@ -38,10 +38,11 @@ layout: default
 </div>
 
 <!--
-Les injections : Avec plus de 25 vulnérabilités, ce domaine inclut les injections SQL, HTML, de commandes, XML/XPath, et LDAP. Ces vulnérabilités permettent d'apprendre à manipuler les systèmes en contournant leur logique de traitement des données.
+Les injections : Avec plus de 25 vulnérabilités, ce domaine inclut les injections SQL, HTML, de commandes, XML/XPath, et LDAP. Ces vulnérabilités permettent d'apprendre à manipuler les systèmes en contournant leur logique de traitement des données. 
+
+Les problèmes d’authentification : Avec 15 vulnérabilités, on y retrouve le contournement de l’authentification, les gestions de sessions faibles, les attaques par force brute, et même des problèmes liés aux cookies. Enfin, il y a d’autres vulnérabilités majeures, comme le Cross-Site Request Forgery (CSRF), l’upload de fichiers malveillants, ou les fuites d’informations sensibles.
+
 Les failles XSS (Cross-Site Scripting) : Plus de 20 vulnérabilités y sont dédiées. Ces failles, telles que les XSS réfléchis, stockés ou basés sur le DOM, visent à manipuler l'exécution du code côté client.
-Les problèmes d’authentification : Avec 15 vulnérabilités, on y retrouve le contournement de l’authentification, les gestions de sessions faibles, les attaques par force brute, et même des problèmes liés aux cookies.
-Enfin, il y a d’autres vulnérabilités majeures, comme le Cross-Site Request Forgery (CSRF), l’upload de fichiers malveillants, ou les fuites d’informations sensibles.
 -->
 
 ---
