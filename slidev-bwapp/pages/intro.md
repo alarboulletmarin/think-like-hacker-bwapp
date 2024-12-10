@@ -1,4 +1,48 @@
 ---
+layout: default
+---
+
+# Overview
+
+<div class="mt-12 mb-12 ml-12">
+  <div class="space-y-6 text-xl">
+    <div class="flex items-center gap-4">
+      <span class="text-blue-500">1.</span>
+      <p>Introduction to bWAPP</p>
+    </div>
+    <div class="flex items-center gap-4">
+      <span class="text-blue-500">2.</span>
+      <p>Technical Overview</p>
+    </div>
+    <div class="flex items-center gap-4">
+      <span class="text-blue-500">3.</span>
+      <p>Vulnerability Exploration</p>
+    </div>
+    <div class="flex items-center gap-4">
+      <span class="text-blue-500">4.</span>
+      <p>Live Demonstrations</p>
+    </div>
+    <div class="flex items-center gap-4">
+      <span class="text-blue-500">5.</span>
+      <p>Analysis & Conclusion</p>
+    </div>
+  </div>
+</div>
+
+<div class="slide-number">
+  <SlideCurrentNo />/<SlideTotalNo />
+</div>
+
+<!--
+Cette présentation se structure en cinq parties principales :
+1. Une introduction pour comprendre bWAPP et ses objectifs
+2. Un aperçu technique détaillant l'architecture et le déploiement
+3. Une exploration des différentes vulnérabilités
+4. Des démonstrations pratiques d'attaques
+5. Une analyse et conclusion sur l'outil
+-->
+
+---
 layout: center
 ---
 

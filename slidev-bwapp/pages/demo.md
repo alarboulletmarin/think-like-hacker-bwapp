@@ -312,8 +312,6 @@ layout: default
 </div>
 
 <!--
-Cette slide est essentielle pour résumer l'impact réel des vulnérabilités que nous venons de démontrer.
-
 Du côté du XSS stocké, les conséquences sont particulièrement graves. Le vol de session permet à un attaquant de se connecter en tant que victime. Toutes les données personnelles peuvent être dérobées. La défiguration de page et les redirections malveillantes affectent l'intégrité du site. Le plus dangereux est que ces attaques touchent tous les visiteurs.
 
 Concernant le Directory Traversal, l'impact se situe au niveau de la confidentialité des données. L'accès aux fichiers de configuration expose les paramètres sensibles du serveur. La fuite des logs permet de cartographier le système. Ces informations constituent une base solide pour des attaques plus sophistiquées.
